@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar vue</title>
+    <script src="lib/vue.js"></script>    
+</head>
+<body>
+    <div id="app">
+        <h1>{{ counter }}</h1>
+        <button onclick="vb.hitung()"> + </button>
+
+    </div>
+
+    <script type="text/javascript">
+        var vb = new Vue({
+            el: '#app',
+            data: {
+                counter: 0
+            },
+            methods: {
+                hitung(){
+                    this.counter++;
+                }
+            }
+            
+        })
+
+    </script>
+</body>
+</html>
